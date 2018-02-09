@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        function red(){
+        var paragraph = document.getElementsByTagName("p");
+        for(var p = 0; p < paragraph.length; p++){
+        paragraph[p].style.border = "1px solid red";
+    }
+}
+    </script>
+</head>
+<body>
+    <p style="border: 1px solid black">1</p>
+    <a href="www.google.com.ua"></a>
+    <p>2</p>
+    <p>3</p>
+    <a href="www.loe.lviv.ua"></a>
+    <p>4</p>
+    <div id="test_div"></div>
+    <p>5</p>
+
+    <input type="button" value="выбрать все параграфы" onclick="red()">
+    <input type="button" value="выбрать все ссылки">
+    <input type="button" value="выбрать DIV">
+    
+    <script src='index.js'></script>
+</body>
+</html>
