@@ -6,28 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
-    <script>
+    <!-- <script>
         function red(){
         var paragraph = document.getElementsByTagName("p");
         for(var p = 0; p < paragraph.length; p++){
-        paragraph[p].style.border = "1px solid red";
+        paragraph[p].setAttribute("style", "color:red;");
     }
 }
-    </script>
+    </script> -->
 </head>
 <body>
     <p style="border: 1px solid black">1</p>
-    <a href="www.google.com.ua"></a>
+    <a href="www.google.com.ua">Гугл</a>
     <p>2</p>
     <p>3</p>
-    <a href="www.loe.lviv.ua"></a>
+    <a href="www.loe.lviv.ua">ЛьвовоблеЕнерго</a>
     <p>4</p>
-    <div id="test_div"></div>
+    <div id="test_div">Div</div>
     <p>5</p>
 
     <input type="button" value="выбрать все параграфы" onclick="red()">
-    <input type="button" value="выбрать все ссылки">
-    <input type="button" value="выбрать DIV">
+    <input type="button" value="выбрать все ссылки" onclick="green()">
+    <input type="button" value="выбрать DIV" onclick="div()">
     
     <script src='index.js'></script>
 </body>
