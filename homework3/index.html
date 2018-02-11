@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript">
+        window.onload = function(){
+    var elemets = MyQuery.FindClass("myclass");
+    alert(elemets.length);
+}
+
+var MyQuery = {};
+
+MyQuery.FindClass = function(x){
+    // var a = document.getElementsByClassName(x);
+    // for(var i = 0; i < a.length; i++){
+    //     console.log(a[i] + " ");
+    // }
+
+    var childs = document.body.childNodes,
+    array = [],
+    count = 0;
+
+    for(var i = 0; i < childs.length; i++){
+        if(childs[i].nodeType ==1){
+
+            if(childs[i].x == x){
+                array[count] = childs[i];
+                count++;
+            }
+        }
+    }
+    return array;
+}
+    </script>
+</head>
+<body>
+    <p  class="myclass"></p>
+    <p  class="myclass"></p>
+    <p  class="class"></p>
+    <p  class="myclass"></p>
+    <p  class="class"></p>
+    <scritp src="index.js"></scritp>
+</body>
+</html>
